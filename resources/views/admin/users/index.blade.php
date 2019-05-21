@@ -10,7 +10,7 @@
              <th>Email</th>
                <th>Created</th>
                <th>Updated</th>
-               <th>Active</th>
+               <th>Status</th>
                <th>Role</th>
            </tr>
          </thead>
