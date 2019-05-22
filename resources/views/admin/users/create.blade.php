@@ -14,14 +14,21 @@
     </div>
     <div class="form-group">
         {!! Form::label('role_id', 'Role:') !!}
-        {!! Form::text('role_id',null, ['class'=>'form-control']) !!}
+        {!! Form::text('role_id', [''=>'Choose Options'] + $roles, null, ['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('status', 'Status:') !!}
         {!! Form::select('status',array(1 => 'Active', 0=> 'Not Active'), ['class'=>'form-control']) !!}
     </div>
+
+    <div class="form-group">
+        {!! Form::label('password', 'Password:') !!}
+        {!! Form::text('password',null, ['class'=>'form-control']) !!}
+    </div>
              <div class="form-group">
              {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
              </div>
              {!! Form::close() !!}
+    @include('includes.form_errors')
+
     @endsection
